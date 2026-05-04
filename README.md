@@ -7,7 +7,7 @@ A full-stack web application built with React (Vite), Express.js, MongoDB, and M
 1. **Prerequisites**: Ensure you have Node.js and MongoDB installed and running.
 2. **Install Root Dependencies**:
    ```bash
-   cd c:/DEV/ACADS/webp/project/academic-monitor
+   cd ./academic-monitor
    npm install
    ```
 3. **Install Server Dependencies**:
@@ -21,11 +21,8 @@ A full-stack web application built with React (Vite), Express.js, MongoDB, and M
    npm install
    ```
 5. **Environment Configuration**:
-   Copy `.env.example` to `.env` in the `server` directory and configure your MongoDB URI:
-   ```bash
-   cp server/.env.example server/.env
-   ```
-
+   Create .env file at
+   ``` server/.env ``` and update PORT and MONGO_URI variables.
 ## Running the Application
 
 From the root directory (`academic-monitor/`), you can start both frontend and backend concurrently:
@@ -37,6 +34,8 @@ npm run dev
 This will run:
 - Frontend: http://localhost:5173
 - Backend: http://localhost:5000
+
+by default if PORT is not updated or absent in .env file.
 
 ## Features
 - Manage Students (Add & View)
